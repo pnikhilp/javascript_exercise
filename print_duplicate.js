@@ -34,6 +34,6 @@ function duplicate(inputArray){
       }
       
     } 
-  console.log("DUPLICATE ELEMENTS = "+out);
+  return ("DUPLICATE ELEMENTS = "+out);
 }
-duplicate([1,2,3,1,1,3,4,2,4])
+console.log([1,2,3,1,1,3,4,2,4]);
