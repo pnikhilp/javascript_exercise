@@ -24,10 +24,10 @@ function addElements(){
     
   }
   
-  console.log(newArray);
+  return newArray;
   
   //return newArray;
   
 }
 
-addElements(6,9,"Nikhil",10,100);
+console.log(addElements(6,9,"Nikhil",10,100));
