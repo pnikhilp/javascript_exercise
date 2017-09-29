@@ -55,5 +55,5 @@ function printChoice(inputArray){
   }
       
 }
-printChoice(["Blue","Red",1,2,3,4,5,6,7,8,9,12,11,111,23,21,34,21,18,19,20,21,22,23,24,0,0,0,0,0]);
+printChoice(["Blue","Red",1,2,3,4,5,6,7,8,9,12,11,111,23,21,34,21,18,19,20,21,22,23,24,0,"Black","White","Green"]);
 
