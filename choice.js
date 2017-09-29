@@ -15,7 +15,7 @@ function printChoice(inputArray){
   
   var i = 1;
   
-  while(i<len){
+  while(i<=len){
         
    if(parseInt(i/10) != 1){
      
