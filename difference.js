@@ -26,7 +26,7 @@ function difference(arrayOne,arrayTwo){
     }
   }
   
-  console.log(output);
+  return output;
 }
 
-difference([12,30,2,1,32],[4,5,1,12,10]);
+console.log(difference([12,30,2,1,32],[4,5,1,12,10]));
