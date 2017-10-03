@@ -31,4 +31,4 @@ function addDelimiter(inputArray,del){
   
 }
 
-addDelimiter([1,2,"A",3,4,"nikhil","calicut",10],"*");
+addDelimiter([1,2,"A",3,4,"nikhil","calicut",10]," * ");
