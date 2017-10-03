@@ -24,8 +24,8 @@ function shuffleArray(inputArray){
   }
   
   //console.log(temp)
-  console.log(inputArray)
+  return inputArray;
   
 }
 
-shuffleArray([9,2,3,4,5,8,90,7])
+console.log(shuffleArray([9,2,3,4,5,8,90,7]));
