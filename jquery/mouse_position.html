@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Mouse position</title>
+
+</head>
+
+<body bgcolor="red" >
+
+  <!-- <p>User ID : <input type="text" id='field1'></p>
+  <p>Password : <input type="password" id='field2'> -->
+
+ <div class="row" style="margin-top: 200px;font-size: 30px">
+
+ 	<div class="col-md-4"></div>
+
+ 	<div class="col-md-4">	
+ 		<p id="position"></p>
+ 	</div>
+
+ 	<div class="col-md-4"></div>
+ 	
+ </div> 
+
+</body>
+
+ <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+ <script type="text/javascript">
+ 	
+  $(document).on('mousemove',(event)=>{
+
+   $('#position').text("X : " + event.pageX +" Y :"+event.pageY)
+
+  })
+
+ </script>
+
+</html>

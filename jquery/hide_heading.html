@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Hide headings</title>
+
+<style>
+	
+  #hide-heading{
+  	margin-top: 50px;
+  	color:red; 
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="row">
+
+	<div class="col-md-4"></div>
+
+	<div class="col-md-4">
+
+    <p>
+    	Click on heading to hide
+    </p>
+
+     <h1 class="hide-heading1" id="hide-heading">Heading 1</h1>
+
+     <h2 class="hide-heading2" id="hide-heading">Heading 2</h2>
+
+     <h3 class="hide-heading3" id="hide-heading">Heading 3</h3>
+
+    </div>
+
+  <div class="col-md-4"></div>
+
+</div>
+
+</body>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+ <script type="text/javascript">
+ 	
+   // $('.hide-heading1').on('click',()=>{
+
+   //    $('.hide-heading1').hide();
+
+   // })
+   // $('.hide-heading2').on('click',()=>{
+
+   //    $('.hide-heading2').hide();
+
+   // })
+   // $('.hide-heading3').on('click',()=>{
+
+   //    $('.hide-heading3').hide();
+
+   // })
+
+$('h1').click((event)=>{
+	$(event.target).hide();
+})
+
+   // $('h1, h2, h3').click((e) => {
+   // 		$(e.target).hide();
+   // })
+
+ </script>
+
+</html>

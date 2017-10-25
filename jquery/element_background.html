@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Element background</title>
+
+	<style>
+
+      .focusedin {
+        background: green;
+       }
+
+      .focusedout {
+        background: blue;
+       }
+       .row{
+       	margin-top: 100px;
+       }
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="row">
+
+   <div class="col-md-4"></div>
+  
+   <div class="col-md-4">
+
+    First name: <input type="text" class="name"><br>
+    Last name: <input type="text" class="name">
+
+   </div>
+
+   <div class="col-md-4"></div>
+
+ </div>
+
+</body>
+
+ <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+ <script type="text/javascript">
+
+    $('.name').on('mouseenter',()=>{
+
+    $('.name').addClass('focusedin')
+
+   })
+    $('name').on('mouseleave',()=>{
+
+    $('.name').addClass('focusedout')
+
+   }) 
+
+ </script>
+
+</html>
+
+
+
+

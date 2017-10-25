@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Event type</title>
+
+</head>
+
+<body>
+
+<div class="row">
+
+<div class="col-md-2"></div>
+
+<div class="col-md-5">
+
+  <h1 class="header1">This is header1</h1>
+
+  <h1 class="header2">This is another header1</h1>
+
+  <h2 class="header3">This is header2</h2>
+
+  <h2 class="header4">This is header3</h2>
+
+</div>
+
+<div class="col-md-5">
+
+	<p>
+		<p id="event-name"></p>
+	</p>
+	
+</div>
+
+</div>
+
+</body>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  	
+    $('.header1').on('click',(event)=>{
+
+       //alert(event.type);
+       $('#event-name').text(event.type)
+
+    })
+
+       $('.header2').on('dblclick',(event)=>{
+
+       //alert(event.type);
+       $('#event-name').text(event.type)
+
+    })
+
+       $('.header3').on('mouseenter',(event)=>{
+
+       //alert(event.type);
+       $('#event-name').text(event.type)
+
+    })
+
+       $('.header4').on('mousemove',(event)=>{
+
+       //alert(event.type);
+       $('#event-name').text(event.type)
+
+    })
+
+  </script>
+
+</html>
