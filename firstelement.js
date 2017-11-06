@@ -13,34 +13,33 @@ function first(inputArray,limit){
   
   var len = inputArray.length;
   
-  if(Array.isArray(inputArray)){
-    
-   /* if(limit<0 || limit>len){
-      
-      //console.log("invalid")
-      
-    }
-  
-   else*/ if (limit==null) {
+  if (limit==null) {
      
      return inputArray[0];
      
    }
-    
-  else{
-    
-    for(let i=0;i<limit;i++){
+    if(limit<0){
       
-      newArray.push(inputArray[i]);
+      return inputArray.slice(limit,0)
+      
+    }
+    if(limit>len){
+      
+      return inputArray
       
     }
     
-    return ("FIRST "+limit+" ELEMENTS "+newArray);
+  else{
+    
+    return inputArray.slice(0,limit)
     
    }
     
-  }
 }
 
-console.log(first([18,2,3,4],3));
+console.log(first([18,2,3,4,9]));
+console.log(first([18,2,3,4,9],4));
+console.log(first([18,2,3,4,9],-3));
+console.log(first([18,2,3,4,9],8));
+
 
